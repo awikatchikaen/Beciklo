@@ -4664,18 +4664,18 @@
 <Layer name="water_areas" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>water_areas</StyleName>
     <Datasource>
-      <Parameter name="estimate_extent">false</Parameter>
       <Parameter name="table">(select way,"natural",waterway,landuse,name,ST_area(way)::numeric as aire from planet_osm_polygon where waterway in ('dock','mill_pond','riverbank','canal') or landuse in ('reservoir','water') or "natural" in ('lake','water','land','marsh','scrub','wetland','glacier') order by z_order,way_area desc) as water_areas</Parameter>
-      <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+      
+      &datasource-settings;
     </Datasource>
 </Layer>
 <Layer name="water_lines" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>water_lines</StyleName>
     <StyleName>dam</StyleName>
     <Datasource>
-      <Parameter name="estimate_extent">false</Parameter>
       <Parameter name="table">(select way,waterway,disused,name,case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel from planet_osm_line where waterway IS NOT NULL order by z_order) as water_lines</Parameter>
-      <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+      
+      &datasource-settings;
     </Datasource>
 </Layer>
 <Layer name="land features" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
@@ -4704,9 +4704,10 @@
 <Layer name="citywalls" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>citywalls</StyleName>
     <Datasource>
-      <Parameter name="estimate_extent">false</Parameter>
+      
       <Parameter name="table">(select way from planet_osm_line where "historic"='citywalls') as citywalls</Parameter>
-      <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+      
+      &datasource-settings;
     </Datasource>
 </Layer>
 <Layer name="turning_circle" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
@@ -4884,9 +4885,10 @@
 <Layer name="waterway-bridges" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>waterway-bridges</StyleName>
     <Datasource>
-      <Parameter name="estimate_extent">false</Parameter>
+      
       <Parameter name="table">(select way,name from planet_osm_line where waterway='canal' and bridge in ('yes','true','1','aqueduct') order by z_order) as water</Parameter>
-      <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+      
+      &datasource-settings;
     </Datasource>
 </Layer>
 <Layer name="bridges" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
