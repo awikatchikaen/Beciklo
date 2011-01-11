@@ -351,14 +351,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <!--CssParameter name="stroke-offset">-2</CssParameter-->
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">-2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -371,14 +369,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -408,14 +404,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">-2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">-2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -428,14 +422,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">2</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -464,14 +456,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">-4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">-4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -483,14 +473,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -518,14 +506,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">-4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">-4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -537,14 +523,12 @@
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-offset">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-offset">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -593,28 +577,24 @@
         <CssParameter name="stroke-width">1</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,4,1</CssParameter>           
-        <CssParameter name="stroke-offset">-2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,3,2</CssParameter>        
-        <CssParameter name="stroke-offset">-2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,2,3</CssParameter>   
-        <CssParameter name="stroke-offset">-2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,1,4</CssParameter>   
-        <CssParameter name="stroke-offset">-2</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -627,28 +607,24 @@
         <CssParameter name="stroke-width">1</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,4,1</CssParameter>           
-        <CssParameter name="stroke-offset">2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,9,3,1</CssParameter>        
-        <CssParameter name="stroke-offset">2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,10,2,1</CssParameter>   
-        <CssParameter name="stroke-offset">2</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,11,1,1</CssParameter>   
-        <CssParameter name="stroke-offset">2</CssParameter>
       </LineSymbolizer>
     </Rule>
 <!-- zoom 16-->
@@ -689,28 +665,24 @@
         <CssParameter name="stroke-width">1</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,4,1</CssParameter>           
-        <CssParameter name="stroke-offset">-4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,3,2</CssParameter>        
-        <CssParameter name="stroke-offset">-4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,2,3</CssParameter>   
-        <CssParameter name="stroke-offset">-4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,1,4</CssParameter>   
-        <CssParameter name="stroke-offset">-4</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -722,28 +694,24 @@
         <CssParameter name="stroke-width">1</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,8,4,1</CssParameter>           
-        <CssParameter name="stroke-offset">4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,9,3,1</CssParameter>        
-        <CssParameter name="stroke-offset">4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,10,2,1</CssParameter>   
-        <CssParameter name="stroke-offset">4</CssParameter>
       </LineSymbolizer>
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-dasharray">0,11,1,1</CssParameter>   
-        <CssParameter name="stroke-offset">4</CssParameter>
       </LineSymbolizer>
     </Rule>
 </Style>
