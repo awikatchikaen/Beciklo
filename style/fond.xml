@@ -34,29 +34,29 @@
       <MaxScaleDenominator>250000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file =  "symbols/halt.png" type="png" width="4" height="4" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/halt.png" type="png" width="4" height="4" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>25000</MinScaleDenominator>
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file =  "symbols/station_small.png" type="png" width="6" height="6" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/station_small.png" type="png" width="6" height="6" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file =  "symbols/station.png" type="png" width="9" height="9" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/station.png" type="png" width="9" height="9" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <PointSymbolizer file =  "symbols/halt.png" type="png" width="4" height="4" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/halt.png" type="png" width="4" height="4" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <PointSymbolizer file =  "symbols/station_small.png" type="png" width="6" height="6" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/station_small.png" type="png" width="6" height="6" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -77,7 +77,7 @@
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file =  "symbols/level_crossing.png" type="png" width="7" height="7" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/level_crossing.png" type="png" width="7" height="7" />
     </Rule>
 </Style>
 <Style name="symbols">
@@ -85,7 +85,7 @@
       <MaxScaleDenominator>2000000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='airport'</Filter>
-      <PointSymbolizer file =  "symbols/airport.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/airport.p.16.png" type="png" width="16" height="16" />
       <TextSymbolizer name="name" face_name="DejaVu Sans Bold" size="8" fill="#6692da" dy="-12" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
@@ -98,7 +98,7 @@
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>500000</MinScaleDenominator>
       <Filter>[aeroway]='aerodrome'</Filter>
-      <PointSymbolizer file =  "symbols/aerodrome.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/aerodrome.p.16.png" type="png" width="16" height="16" />
       <TextSymbolizer name="name" face_name="DejaVu Sans Oblique" size="8" fill="#6692da" dy="-12" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
@@ -111,57 +111,57 @@
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>10000</MinScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file= "symbols/level_crossing.png" type="png" width="7" height="7" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/level_crossing.png" type="png" width="7" height="7" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[railway]='level_crossing'</Filter>
-      <PointSymbolizer file= "symbols/level_crossing2.png" type="png" width="11" height="11" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/level_crossing2.png" type="png" width="11" height="11" />
     </Rule> 
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[man_made]='lighthouse'</Filter>
-      <PointSymbolizer file= "symbols/lighthouse.p.20.png" type="png" width="20" height="20" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/lighthouse.p.20.png" type="png" width="20" height="20" />
     </Rule> 
     <Rule>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <Filter>[natural]='peak'</Filter>
-      <PointSymbolizer file= "symbols/peak.png" type="png" width="8" height="8" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/peak.png" type="png" width="8" height="8" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <Filter>[natural]='spring'</Filter>
-      <PointSymbolizer file= "symbols/spring.png" type="png" width="5" height="7" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/spring.png" type="png" width="5" height="7" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[natural]='tree'</Filter>
-      <PointSymbolizer file= "symbols/tree.png" type="png" width="3" height="3" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/tree.png" type="png" width="3" height="3" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[man_made]='windmill'</Filter>
-      <PointSymbolizer file =  "symbols/windmill.png" type="png" width="10" height="15" />
+      <PointSymbolizer file =  "/opt/mapnik/symbols/windmill.png" type="png" width="10" height="15" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[man_made]='mast'</Filter>
-      <PointSymbolizer file= "symbols/communications.p.20.png" type="png" width="20" height="20" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/communications.p.20.png" type="png" width="20" height="20" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[highway]='mini_roundabout'</Filter>
-      <PointSymbolizer file= "symbols/mini_round.png" type="png" width="9" height="9" allow_overlap="false"/>
+      <PointSymbolizer file= "/opt/mapnik/symbols/mini_round.png" type="png" width="9" height="9" allow_overlap="false"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[highway]='gate' or [barrier]='gate'</Filter>
-      <PointSymbolizer file= "symbols/gate2.png" type="png" width="7" height="5" allow_overlap="false"/>
+      <PointSymbolizer file= "/opt/mapnik/symbols/gate2.png" type="png" width="7" height="5" allow_overlap="false"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[barrier]='bollard'</Filter>
-      <PointSymbolizer file= "symbols/bollard.png" type="png" width="3" height="3" allow_overlap="false"/>
+      <PointSymbolizer file= "/opt/mapnik/symbols/bollard.png" type="png" width="3" height="3" allow_overlap="false"/>
     </Rule>
 </Style>
 
@@ -169,49 +169,49 @@
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[amenity]='shelter'</Filter>
-      <PointSymbolizer file= "symbols/shelter2.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/shelter2.p.16.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='atm'</Filter>
-      <PointSymbolizer file= "symbols/atm2.p.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/atm2.p.16.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <MinScaleDenominator>5000</MinScaleDenominator>
       <Filter>[amenity]='bus_stop' or [highway]='bus_stop'</Filter>
-      <PointSymbolizer file= "symbols/bus_stop_small.png" type="png" width="3" height="3" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/bus_stop_small.png" type="png" width="3" height="3" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[amenity]='bus_stop' or [highway]='bus_stop'</Filter>
-      <PointSymbolizer file= "symbols/bus_stop.p.12.png" type="png" width="12" height="12" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/bus_stop.p.12.png" type="png" width="12" height="12" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='bus_station'</Filter>
-      <PointSymbolizer file= "symbols/bus_station.n.16.png" type="png" width="16" height="16" allow_overlap="false"/>
+      <PointSymbolizer file= "/opt/mapnik/symbols/bus_station.n.16.png" type="png" width="16" height="16" allow_overlap="false"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[tourism]='camp_site'</Filter>
-      <PointSymbolizer file= "symbols/camping.n.16.png" type="png" width="16" height="16" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/camping.n.16.png" type="png" width="16" height="16" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[tourism]='caravan_site'</Filter>
-      <PointSymbolizer file= "symbols/caravan_park.p.24.png" type="png" width="24" height="24" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/caravan_park.p.24.png" type="png" width="24" height="24" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>10000</MaxScaleDenominator>
       <Filter>[amenity]='car_sharing'</Filter>
-      <PointSymbolizer file= "symbols/car_share.p.16.png" type="png" width="16" height="16" allow_overlap="false"/>
+      <PointSymbolizer file= "/opt/mapnik/symbols/car_share.p.16.png" type="png" width="16" height="16" allow_overlap="false"/>
     </Rule>
     
     <Rule>
       <MaxScaleDenominator>5000</MaxScaleDenominator>
       <Filter>[man_made]='mast'</Filter>
-      <PointSymbolizer file= "symbols/communications.p.20.png" type="png" width="20" height="20" />
+      <PointSymbolizer file= "/opt/mapnik/symbols/communications.p.20.png" type="png" width="20" height="20" />
     </Rule>
 </Style>
 
@@ -314,7 +314,7 @@
 <!--    <Rule>
       <Filter>[landuse] = 'quarry'</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/quarry2.png" type="png" width="30" height="30"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/quarry2.png" type="png" width="30" height="30"/>
       <LineSymbolizer>
         <CssParameter name="stroke">grey</CssParameter>
 	<CssParameter name="stroke-width">0.5</CssParameter>
@@ -332,23 +332,23 @@
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/vineyard.png" type="png" width="19" height="21"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/vineyard.png" type="png" width="19" height="21"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'vineyard'</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/vineyard.png" type="png" width="29" height="29"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/vineyard.png" type="png" width="29" height="29"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'nature_reserve'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/nature_reserve.png" type="png" width="21" height="24"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/nature_reserve.png" type="png" width="21" height="24"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'nature_reserve'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/nature_reserve2.png" type="png" width="42" height="48"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/nature_reserve2.png" type="png" width="42" height="48"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
@@ -408,7 +408,7 @@
     <Rule>
       <Filter>[tourism] = 'zoo'</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/zoo.png" type="png" width="21" height="24"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/zoo.png" type="png" width="21" height="24"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'common'</Filter>
@@ -493,7 +493,7 @@
         <CssParameter name="stroke-width">1.5</CssParameter>
         <CssParameter name="stroke-dasharray">4,2</CssParameter>
       </LineSymbolizer>
-      <PolygonPatternSymbolizer file= "symbols/glacier.png" type="png" width="40" height="32"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/glacier.png" type="png" width="40" height="32"/>
     </Rule>
     <Rule>
       <Filter>[natural] = 'glacier'</Filter>
@@ -503,7 +503,7 @@
         <CssParameter name="stroke-width">1.5</CssParameter>
         <CssParameter name="stroke-dasharray">4,2</CssParameter>
       </LineSymbolizer>
-      <PolygonPatternSymbolizer file= "symbols/glacier2.png" type="png" width="70" height="56"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/glacier2.png" type="png" width="70" height="56"/>
     </Rule>
     <Rule>
       <Filter>[landuse] = 'brownfield' or [landuse]='landfill' or [landuse] = 'greenfield' or [landuse]='construction'</Filter>
@@ -556,12 +556,12 @@
     <Rule>
       <Filter>[natural] = 'beach'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/beach.png" type="png" width="10" height="10"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/beach.png" type="png" width="10" height="10"/>
     </Rule>
     <Rule>
       <Filter>[natural] = 'mud'</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <PolygonPatternSymbolizer file= "symbols/mud.png" type="png" width="10" height="10"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/mud.png" type="png" width="10" height="10"/>
     </Rule>
     <Rule>
       <Filter>[leisure] = 'pitch'</Filter>
@@ -907,12 +907,12 @@
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[natural] = 'marsh' or [natural] = 'wetland'</Filter>
-      <PolygonPatternSymbolizer file= "symbols/marsh.png" type="png" width="30" height="30"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/marsh.png" type="png" width="30" height="30"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <Filter>[natural] = 'scrub'</Filter>
-      <PolygonPatternSymbolizer file= "symbols/scrub.png" type="png" width="30" height="30"/>
+      <PolygonPatternSymbolizer file= "/opt/mapnik/symbols/scrub.png" type="png" width="30" height="30"/>
     </Rule>
     <Rule>
       <Filter>[natural] = 'land'</Filter>
@@ -4115,145 +4115,145 @@
       <Filter>[highway] = 'motorway' and [length] = 1</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 2</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 3</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 4</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 5</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 6</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 7</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 8</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 1</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 2</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 3</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield3.png" type="png" width="31" height="17" min_distance="24" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield3.png" type="png" width="31" height="17" min_distance="24" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 4</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 5</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 6</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 7</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 8</Filter>
       <MaxScaleDenominator>500000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 1</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 2</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 3</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 4</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 5</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 6</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 7</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 8</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
     </Rule>
 </Style>
 <Style name="roads-text">
@@ -4261,193 +4261,193 @@
       <Filter>[highway] = 'motorway' and [length] = 1</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 2</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 3</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 4</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 5</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 6</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 7</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'motorway' and [length] = 8</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 1</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 2</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 3</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield3.png" type="png" width="31" height="17" min_distance="24" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield3.png" type="png" width="31" height="17" min_distance="24" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 4</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 5</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 6</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 7</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' and [length] = 8</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/tru_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/tru_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 1</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 2</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 3</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 4</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 5</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 6</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 7</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 8</Filter>
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/pri_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/pri_shield8.png" type="png" width="66" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 1</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield1.png" type="png" width="17" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield1.png" type="png" width="17" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 2</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield2.png" type="png" width="24" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield2.png" type="png" width="24" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 3</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield3.png" type="png" width="31" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield3.png" type="png" width="31" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 4</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield4.png" type="png" width="38" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield4.png" type="png" width="38" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 5</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield5.png" type="png" width="45" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield5.png" type="png" width="45" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 6</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield6.png" type="png" width="52" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield6.png" type="png" width="52" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 7</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield7.png" type="png" width="59" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield7.png" type="png" width="59" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'secondary' and [length] = 8</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>100</MinScaleDenominator>
-      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "symbols/sec_shield8.png" type="png" width="66" height="17" min_distance="21" spacing="750"/>
+      <ShieldSymbolizer name="ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/opt/mapnik/symbols/sec_shield8.png" type="png" width="66" height="17" min_distance="21" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>([aeroway] = 'runway' or [aeroway]='taxiway') and not [bridge]='yes'</Filter>
@@ -4533,17 +4533,17 @@
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>20000</MinScaleDenominator>
       <Filter>[natural] = 'cliff'</Filter>       
-       <LinePatternSymbolizer file= "symbols/cliff.png" type="png" width="10" height="4" />
+       <LinePatternSymbolizer file= "/opt/mapnik/symbols/cliff.png" type="png" width="10" height="4" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[natural] = 'cliff'</Filter>
-       <LinePatternSymbolizer file= "symbols/cliff2.png" type="png" width="12" height="6" />
+       <LinePatternSymbolizer file= "/opt/mapnik/symbols/cliff2.png" type="png" width="12" height="6" />
     </Rule>
     <Rule>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <Filter>[man_made] = 'embankment'</Filter>
-       <LinePatternSymbolizer file= "symbols/cliff.png" type="png" width="10" height="4" />
+       <LinePatternSymbolizer file= "/opt/mapnik/symbols/cliff.png" type="png" width="10" height="4" />
     </Rule>
 </Style>
 <Style name="directions">
