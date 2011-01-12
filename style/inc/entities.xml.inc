@@ -1,3 +1,5 @@
+<!ENTITY % settings SYSTEM "settings.xml.inc">
+%settings;
 <!ENTITY datasource-settings SYSTEM "datasource-settings.xml.inc">
 <!ENTITY maxscale_zoom0 "<MaxScaleDenominator>250000000000</MaxScaleDenominator>">
 <!ENTITY maxscale_zoom1 "<MaxScaleDenominator>500000000</MaxScaleDenominator>">

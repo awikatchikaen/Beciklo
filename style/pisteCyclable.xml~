@@ -790,49 +790,49 @@
       <Filter>[ network_ref_length] = 1</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield1.png" type="png" width="17" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 2</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield2.png" type="png" width="24" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 3</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield3.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 4</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield4.png" type="png" width="38" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 5</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield5.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 6</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 7</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield6.png" type="png" width="52" height="17" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[ network_ref_length] = 8</Filter>
       <MaxScaleDenominator>1000000</MaxScaleDenominator>
       <MinScaleDenominator>150000</MinScaleDenominator>
-      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "&symbols;/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="network_ref" face_name="DejaVu Sans Bold" size="10" fill="#fff" placement="line" file= "/media/Stockage/Data/Sites/map/mapnikOsm/symbols/mot_shield7.png" type="png" width="59" height="17" min_distance="30" spacing="750"/>
     </Rule>
 </Style>
 
