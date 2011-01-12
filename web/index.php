@@ -12,7 +12,8 @@
         var lon = 3.085;
         var zoom = 10;
         var map;
-OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
+	
+	OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
  
 	function get_osm_url (bounds) {
 	 var res = this.map.getResolution();
@@ -45,22 +46,22 @@ OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
             } );
  
 
-            var newLayer = new OpenLayers.Layer.OSM("MyLayer", "http://95.142.175.12/beciklo/map/${z}/${x}/${y}.png");
-            map.addLayer(newLayer);
+       var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://95.142.175.12/beciklo/map/background/${z}/${x}/${y}.png");
+       map.addLayer(newLayer);
 
-var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
- map.addLayer(mapquest);
+       var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
+       map.addLayer(mapquest);
  
-var l = new OpenLayers.Layer.TMS( 
-  "Mapnik", 
-  ["http://tile.openstreetmap.org/"],
-  {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true }, {'buffer':1} );
-  map.addLayer(l);
+       var l = new OpenLayers.Layer.TMS( 
+        "Mapnik", 
+        ["http://tile.openstreetmap.org/"],
+        {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true }, {'buffer':1} );
+       map.addLayer(l);
 
  
-            var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
-            map.setCenter(lonLat, zoom);
-        }
+       var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
+       map.setCenter(lonLat, zoom);
+      }
     </script>
 
 <!--  
