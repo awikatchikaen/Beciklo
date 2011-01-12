@@ -58,10 +58,13 @@
         {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true }, {'buffer':1} );
        map.addLayer(l);
 
- 
-       var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
-       map.setCenter(lonLat, zoom);
-      }
+       
+       if (!map.getCenter()) {
+
+         var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
+         map.setCenter(lonLat, zoom);
+       }
+     }
     </script>
 
 <!--  
