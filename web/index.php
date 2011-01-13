@@ -58,6 +58,12 @@
         {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true }, {'buffer':1} );
        map.addLayer(l);
 
+
+       var pistes = new OpenLayers.Layer.OSM("Pistes", "http://95.142.175.12/beciklo/map/pistes/${z}/${x}/${y}.png");
+       pistes.setIsBaseLayer(false);
+       pistes.setVisibility(true);
+       map.addLayer(pistes);
+
        
        if (!map.getCenter()) {
 
@@ -67,17 +73,7 @@
      }
     </script>
 
-<!--  
-  if (!map.getCenter()) {
-    var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
-    map.setCenter(lonLat, zoom);
-  }
-  
-  }-->
-  
-  
 
-    
     </head>
     
     <body onload="init();">
