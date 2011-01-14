@@ -236,7 +236,7 @@
       </LineSymbolizer>
     </Rule>
 
-<Rule>
+<!--Rule>
       <Filter>[highway] = 'track' and [longueur] > 500 and not [tracktype]='grade1'</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>100000</MinScaleDenominator>
@@ -270,7 +270,7 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-    </Rule>
+    </Rule-->
 </Style>
 
 <Style name="cycleway">
