@@ -39,7 +39,7 @@
                     new OpenLayers.Control.Attribution()],
                 maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
                 maxResolution: 156543.0399,
-                numZoomLevels: 19,
+                numZoomLevels: 16,
                 units: 'm',
                 projection: epgs900913,
                 displayProjection: epsg4326
