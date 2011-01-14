@@ -46,7 +46,7 @@
             } );
  
 
-       var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://95.142.175.12/beciklo/map/background/${z}/${x}/${y}.png");
+       var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://95.142.175.12/beciklo/map/beciklo/${z}/${x}/${y}.png");
        map.addLayer(newLayer);
 
        var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
