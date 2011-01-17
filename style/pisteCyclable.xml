@@ -34,7 +34,7 @@
       </LineSymbolizer>
     </Rule>
 </Style>
-<Style name="minor-roads-fill"> 
+<Style name="roads-calque1"> 
 
      <Rule>
       <Filter>([highway] = 'pedestrian'
@@ -49,13 +49,7 @@
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
-      </LineSymbolizer>
+     
     </Rule>  
     <Rule>
       <Filter>([highway] = 'pedestrian'
@@ -69,13 +63,6 @@
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
       </LineSymbolizer>
     </Rule>  
     <Rule>
@@ -91,13 +78,6 @@
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
-      </LineSymbolizer>
     </Rule>  
     <Rule>
       <Filter>([highway] = 'pedestrian'
@@ -111,13 +91,6 @@
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
-      </LineSymbolizer>
     </Rule>  
     <Rule>
       <Filter>([highway] = 'pedestrian'
@@ -129,13 +102,6 @@
         <CssParameter name="stroke-width">2</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
       </LineSymbolizer>
     </Rule>  
 
@@ -153,12 +119,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>[longueur] > 500 and (([highway] = 'path' and not [bicycle]='no'
@@ -174,19 +134,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">3,4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
  <Rule>
       <Filter>[highway] = 'cycleway' 
@@ -200,12 +147,6 @@
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -224,13 +165,6 @@
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">3,4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -272,21 +206,150 @@
       </LineSymbolizer>
     </Rule-->
 </Style>
+<Style name="roads-calque2"> 
 
-<Style name="cycleway">
+     <Rule>
+      <Filter>([highway] = 'pedestrian'
+              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              and [longueur] > 500</Filter>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">miter</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+      </LineSymbolizer>
+    </Rule>  
     <Rule>
+      <Filter>([highway] = 'pedestrian'
+              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              and [longueur] > 250</Filter>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <MinScaleDenominator>50000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">miter</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+      </LineSymbolizer>
+    </Rule>  
+    <Rule>
+      <Filter>([highway] = 'pedestrian'
+              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              and [longueur] > 150</Filter>
+      <MaxScaleDenominator>50000</MaxScaleDenominator>
+      <MinScaleDenominator>25000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">miter</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+      </LineSymbolizer>
+    </Rule>  
+    <Rule>
+      <Filter>([highway] = 'pedestrian'
+              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <MinScaleDenominator>15000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">miter</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+      </LineSymbolizer>
+    </Rule>  
+    <Rule>
+      <Filter>([highway] = 'pedestrian'
+              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">miter</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+      </LineSymbolizer>
+    </Rule>  
+
+ <Rule>
+      <Filter>[longueur] > 500 and ([highway] = 'cycleway' 
+               or ([highway] = 'path' and not [bicycle]='no'
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
+                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no')))
+      </Filter>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[longueur] > 500 and (([highway] = 'path' and not [bicycle]='no'
+                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes'))
+      </Filter>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <MinScaleDenominator>100000</MinScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">lawngreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-dasharray">3,4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+ <Rule>
+      <Filter>[highway] = 'cycleway' 
+               or ([highway] = 'path' and not [bicycle]='no'
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
+                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
+      </Filter>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([highway] = 'path' and not [bicycle]='no'
+                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes')
+      </Filter>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">lawngreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-dasharray">3,4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+</Style>
+
+<Style name="cycleway-calque1">
+  <Rule>
       <Filter>([highway] = 'road' or [highway] = 'residential' or [highway] = 'unclassified') and [bicycle] = 'designated' and [longueur] > 500</Filter>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-dasharray">3,4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -303,12 +366,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>([cycleway] = 'track' or [cycleway]='opposite_track' or [cycleway:right]='track' or [cycleway:left]='track')
@@ -320,12 +377,6 @@
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
 <!--zoom 15-->
@@ -339,12 +390,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>([cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane'))
@@ -356,12 +401,6 @@
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -375,12 +414,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule> 
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
@@ -391,12 +424,6 @@
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -410,12 +437,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
@@ -428,12 +449,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
 <!-- zoom 16-->
     <Rule>
@@ -444,12 +459,6 @@
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -462,12 +471,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
@@ -479,12 +482,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
@@ -494,12 +491,6 @@
         <CssParameter name="stroke-width">3</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
@@ -512,12 +503,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
     </Rule>
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
@@ -529,6 +514,187 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
+    </Rule>
+  
+  </Style>
+
+<Style name="cycleway-calque2">
+    <Rule>
+      <Filter>([highway] = 'road' or [highway] = 'residential' or [highway] = 'unclassified') and [bicycle] = 'designated' and [longueur] > 500</Filter>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-dasharray">3,4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+<!--zoom inf a 15-->
+    <Rule>
+      <Filter>([cycleway] = 'lane' or [cycleway]='opposite_lane' or [cycleway:right]='lane' or [cycleway:left]='lane') 
+               and [longueur] > 200</Filter> <!--a ce niveau la on affiche tout sans decalage-->
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <MinScaleDenominator>25000</MinScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway] = 'track' or [cycleway]='opposite_track' or [cycleway:right]='track' or [cycleway:left]='track')
+               and [longueur] > 200</Filter>
+      <MaxScaleDenominator>200000</MaxScaleDenominator>
+      <MinScaleDenominator>25000</MinScaleDenominator>
+    
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+<!--zoom 15-->
+    <Rule>
+      <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <MinScaleDenominator>15000</MinScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane'))
+           or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <MinScaleDenominator>15000</MinScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
+            or [cycleway]='opposite_lane'</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>      
+      <MinScaleDenominator>15000</MinScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule> 
+    <Rule>
+      <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <MinScaleDenominator>15000</MinScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track'))
+           or ([cycleway] = 'track' and [oneway]='yes')</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>
+      <MinScaleDenominator>15000</MinScaleDenominator>
+    
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
+            or [cycleway]='opposite_track'</Filter>
+      <MaxScaleDenominator>25000</MaxScaleDenominator>      
+      <MinScaleDenominator>15000</MinScaleDenominator>
+      
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+<!-- zoom 16-->
+    <Rule>
+      <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane')
+               or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+     
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
+              or [cycleway]='opposite_lane'</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">cornflowerblue</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track')
+              or ([cycleway] = 'track' and [oneway]='yes')</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
+              or [cycleway]='opposite_track'</Filter>
+      <MaxScaleDenominator>15000</MaxScaleDenominator>
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -838,7 +1004,8 @@
 
 <Layer name="minor-roads-fill" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>minor-roads-fill-links</StyleName>
-    <StyleName>minor-roads-fill</StyleName>
+    <StyleName>roads-calque1</StyleName>
+    <StyleName>roads-calque2</StyleName>
     <Datasource>
       <Parameter name="table">
       (select way,highway,horse,bicycle,foot,railway,service,cycleway,network,"ramp:bicycle",oneway,tracktype,
@@ -860,7 +1027,8 @@
     </Datasource>
 </Layer>
 <Layer name="cycleway" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-    <StyleName>cycleway</StyleName>
+    <StyleName>cycleway-calque1</StyleName>
+    <StyleName>cycleway-calque2</StyleName>
     <Datasource>
       <Parameter name="table">
       (select way,highway,bicycle,foot,cycleway,oneway,"ramp:bicycle",

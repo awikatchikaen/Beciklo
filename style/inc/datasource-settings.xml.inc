@@ -5,10 +5,10 @@ Note: feel free to leave password, host, port, or use blank
 -->
 
 <Parameter name="type">postgis</Parameter>
-<Parameter name="password">---</Parameter>
+<Parameter name="password">tilegen</Parameter>
 <Parameter name="host">localhost</Parameter>
 <Parameter name="port">5432</Parameter>
-<Parameter name="user">beciklo</Parameter>
+<Parameter name="user">tilegen</Parameter>
 <Parameter name="dbname">gis</Parameter>
 <!-- this should be 'false' if you are manually providing the 'extent' -->
 <Parameter name="estimate_extent">false</Parameter>
