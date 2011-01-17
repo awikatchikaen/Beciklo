@@ -11,7 +11,7 @@
 <Style name="access">
     <Rule>
       <Filter>[access] = 'permissive' and [highway]='footway'</Filter>
-      <MaxScaleDenominator>20000</MaxScaleDenominator>
+       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">#cf9</CssParameter>
         <CssParameter name="stroke-width">6</CssParameter>
@@ -23,7 +23,7 @@
     </Rule>
     <Rule>
       <Filter>[access] = 'private' or [access] = 'no'</Filter>
-      <MaxScaleDenominator>20000</MaxScaleDenominator>
+       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">#efa9a9</CssParameter>
         <CssParameter name="stroke-width">6</CssParameter>
@@ -41,8 +41,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 500</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -56,8 +56,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 250</Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <MinScaleDenominator>50000</MinScaleDenominator>
+      &maxscale_zoom13;
+       &minscale_zoom13;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -70,8 +70,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 150</Filter>
-      <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom14;
+       &minscale_zoom14;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -83,8 +83,8 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -96,7 +96,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -111,8 +111,8 @@
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
                          or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no')))
       </Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -126,8 +126,8 @@
                 and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes'))
       </Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -141,7 +141,7 @@
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
                          or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
       </Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      &maxscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -155,7 +155,7 @@
                 and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
       </Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      &maxscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -172,8 +172,8 @@
 
 <!--Rule>
       <Filter>[highway] = 'track' and [longueur] > 500 and not [tracktype]='grade1'</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">#807254</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -190,7 +190,7 @@
     </Rule>
     <Rule>
       <Filter>[highway] = 'track' and not [tracktype]='grade1'</Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      &maxscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">#807254</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -213,8 +213,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 500</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -228,8 +228,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 250</Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
-      <MinScaleDenominator>50000</MinScaleDenominator>
+      &maxscale_zoom13;
+       &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -243,8 +243,8 @@
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
               and [longueur] > 150</Filter>
-      <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom14;
+       &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -257,8 +257,8 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -271,7 +271,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -287,8 +287,8 @@
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
                          or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no')))
       </Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -302,8 +302,8 @@
                 and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes'))
       </Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">lawngreen</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -318,7 +318,7 @@
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
                          or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
       </Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      &maxscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -332,7 +332,7 @@
                 and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
       </Filter>
-      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      &maxscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">lawngreen</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -346,7 +346,7 @@
 <Style name="cycleway-calque1">
   <Rule>
       <Filter>([highway] = 'road' or [highway] = 'residential' or [highway] = 'unclassified') and [bicycle] = 'designated' and [longueur] > 500</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
+       &maxscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -358,8 +358,8 @@
     <Rule>
       <Filter>([cycleway] = 'lane' or [cycleway]='opposite_lane' or [cycleway:right]='lane' or [cycleway:left]='lane') 
                and [longueur] > 200</Filter> <!--a ce niveau la on affiche tout sans decalage-->
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -370,8 +370,8 @@
     <Rule>
       <Filter>([cycleway] = 'track' or [cycleway]='opposite_track' or [cycleway:right]='track' or [cycleway:left]='track')
                and [longueur] > 200</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -382,8 +382,8 @@
 <!--zoom 15-->
     <Rule>
       <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -394,8 +394,8 @@
     <Rule>
       <Filter>([cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane'))
            or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -406,8 +406,8 @@
     <Rule>
       <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
             or [cycleway]='opposite_lane'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>      
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;      
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -417,8 +417,8 @@
     </Rule> 
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -429,8 +429,8 @@
     <Rule>
       <Filter>([cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track'))
            or ([cycleway] = 'track' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -441,8 +441,8 @@
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
             or [cycleway]='opposite_track'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>      
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;      
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -453,7 +453,7 @@
 <!-- zoom 16-->
     <Rule>
       <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -464,7 +464,7 @@
     <Rule>
       <Filter>[cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane')
                or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -475,7 +475,7 @@
     <Rule>
       <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
               or [cycleway]='opposite_lane'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -485,7 +485,7 @@
     </Rule>
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -496,7 +496,7 @@
     <Rule>
       <Filter>[cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track')
               or ([cycleway] = 'track' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -507,7 +507,7 @@
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
               or [cycleway]='opposite_track'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -521,7 +521,7 @@
 <Style name="cycleway-calque2">
     <Rule>
       <Filter>([highway] = 'road' or [highway] = 'residential' or [highway] = 'unclassified') and [bicycle] = 'designated' and [longueur] > 500</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
+       &maxscale_zoom12;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -535,8 +535,8 @@
     <Rule>
       <Filter>([cycleway] = 'lane' or [cycleway]='opposite_lane' or [cycleway:right]='lane' or [cycleway:left]='lane') 
                and [longueur] > 200</Filter> <!--a ce niveau la on affiche tout sans decalage-->
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom14;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -548,8 +548,8 @@
     <Rule>
       <Filter>([cycleway] = 'track' or [cycleway]='opposite_track' or [cycleway:right]='track' or [cycleway:left]='track')
                and [longueur] > 200</Filter>
-      <MaxScaleDenominator>200000</MaxScaleDenominator>
-      <MinScaleDenominator>25000</MinScaleDenominator>
+       &maxscale_zoom12;
+       &minscale_zoom14;
     
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
@@ -561,8 +561,8 @@
 <!--zoom 15-->
     <Rule>
       <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -574,8 +574,8 @@
     <Rule>
       <Filter>([cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane'))
            or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -587,8 +587,8 @@
     <Rule>
       <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
             or [cycleway]='opposite_lane'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>      
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;      
+      &minscale_zoom15;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -599,8 +599,8 @@
     </Rule> 
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
      
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
@@ -612,8 +612,8 @@
     <Rule>
       <Filter>([cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track'))
            or ([cycleway] = 'track' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
     
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
@@ -625,8 +625,8 @@
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
             or [cycleway]='opposite_track'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>      
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;      
+      &minscale_zoom15;
       
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
@@ -638,7 +638,7 @@
 <!-- zoom 16-->
     <Rule>
       <Filter>[cycleway] = 'lane' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -650,7 +650,7 @@
     <Rule>
       <Filter>[cycleway:right]='lane' and ([oneway]='yes' or not [cycleway:left]='lane')
                or ([cycleway] = 'lane' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
@@ -662,7 +662,7 @@
     <Rule>
       <Filter>([cycleway:left]='lane' and not [cycleway:right]='lane')
               or [cycleway]='opposite_lane'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -672,7 +672,7 @@
     </Rule>
     <Rule>
       <Filter>[cycleway] = 'track' and not [oneway]='yes'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -683,7 +683,7 @@
     <Rule>
       <Filter>[cycleway:right]='track' and ([oneway]='yes' or not [cycleway:left]='track')
               or ([cycleway] = 'track' and [oneway]='yes')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -694,7 +694,7 @@
     <Rule>
       <Filter>([cycleway:left]='track' and not [cycleway:right]='track')
               or [cycleway]='opposite_track'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -709,8 +709,8 @@
 <!-- zoom 15-->
      <Rule>
       <Filter>[highway] = 'cycleway' and [oneway]='yes'</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -739,8 +739,8 @@
     <Rule>
       <Filter>(([cycleway] = 'lane' or [cycleway] = 'track') and [oneway]='yes')
               or ([cycleway:right]='lane' and not [cycleway:left] = 'lane')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -769,8 +769,8 @@
     <Rule>
       <Filter>(([cycleway] = 'opposite_lane' or [cycleway] = 'opposite_track') and [oneway]='yes')
               or ([cycleway:left]='lane' and not [cycleway:right] = 'lane')</Filter>
-      <MaxScaleDenominator>25000</MaxScaleDenominator>
-      <MinScaleDenominator>15000</MinScaleDenominator>
+       &maxscale_zoom15;
+      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -799,7 +799,7 @@
 <!-- zoom 16-->
      <Rule>
       <Filter>[highway] = 'cycleway' and [oneway]='yes'</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -828,7 +828,7 @@
     <Rule>
       <Filter>(([cycleway] = 'lane' or [cycleway] = 'track') and [oneway]='yes')
               or ([cycleway:right]='lane' and not [cycleway:left] = 'lane')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -857,7 +857,7 @@
     <Rule>
       <Filter>(([cycleway] = 'opposite_lane' or [cycleway] = 'opposite_track') and [oneway]='yes')
               or ([cycleway:left]='lane' and not [cycleway:right] = 'lane')</Filter>
-      <MaxScaleDenominator>15000</MaxScaleDenominator>
+       &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -906,7 +906,7 @@
  <Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
       <MaxScaleDenominator>250000</MaxScaleDenominator>
-      <MinScaleDenominator>100000</MinScaleDenominator>
+       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">#D71FEC</CssParameter>
         <CssParameter name="stroke-width">6</CssParameter>
