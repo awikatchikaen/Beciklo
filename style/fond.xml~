@@ -7,8 +7,8 @@
 <Map bgcolor="#f1eee8" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
 <!--Style name="world">
     <Rule>
-      <MaxScaleDenominator>250000000000</MaxScaleDenominator>
-      <MinScaleDenominator>600000</MinScaleDenominator>
+       &maxscale_zoom0;
+       &minscale_zoom9;
       <PolygonSymbolizer>
         <CssParameter name="fill">#f2efe9</CssParameter>
       </PolygonSymbolizer>
@@ -16,7 +16,7 @@
 </Style>
 <Style name="coast-poly">
     <Rule>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
+       &maxscale_zoom8;
       <PolygonSymbolizer>
         <CssParameter name="fill">#f2efe9</CssParameter>
       </PolygonSymbolizer>
@@ -491,7 +491,7 @@
     <Rule>
       <Filter>[natural] = 'glacier'</Filter>
        &maxscale_zoom6;
-      <MinScaleDenominator>2500000</MinScaleDenominator>
+       &minscale_zoom7;
       <LineSymbolizer>
         <CssParameter name="stroke">#9cf</CssParameter>
         <CssParameter name="stroke-width">1.5</CssParameter>
@@ -2748,7 +2748,7 @@
     <Rule>
       <Filter>[aeroway] = 'runway'</Filter>
        &maxscale_zoom11;
-      <MinScaleDenominator>200000</MinScaleDenominator>
+       &minscale_zoom11;
       <LineSymbolizer>
         <CssParameter name="stroke">#bbc</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -4012,7 +4012,7 @@
    <Rule>
      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
        &maxscale_zoom11;
-      <MinScaleDenominator>200000</MinScaleDenominator>
+       &minscale_zoom11;
       <LineSymbolizer>
       <CssParameter name="stroke">#f0c990</CssParameter>
       <CssParameter name="stroke-width">2.5</CssParameter>
@@ -4052,7 +4052,7 @@
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
        &maxscale_zoom11;
-      <MinScaleDenominator>200000</MinScaleDenominator>
+       &minscale_zoom11;
       <LineSymbolizer>
         <CssParameter name="stroke">#f0d8b5</CssParameter>
         <CssParameter name="stroke-width">2.5</CssParameter>
