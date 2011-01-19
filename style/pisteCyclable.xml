@@ -40,7 +40,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -56,7 +56,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 250</Filter>
       &maxscale_zoom13;
        &minscale_zoom13;
@@ -71,7 +71,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 150</Filter>
        &maxscale_zoom14;
        &minscale_zoom14;
@@ -86,7 +86,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
       &minscale_zoom15;
        <LineSymbolizer>
@@ -100,7 +100,7 @@
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
               or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom16;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
