@@ -977,7 +977,7 @@
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
     </Rule>   
- <Rule>
+ <!--Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
       <MaxScaleDenominator>250000</MaxScaleDenominator>
        &minscale_zoom12;
@@ -988,7 +988,7 @@
         <CssParameter name="stroke-linecap">butt</CssParameter>
         <CssParameter name="stroke-opacity">0.2</CssParameter>
       </LineSymbolizer>
-    </Rule>  
+    </Rule-->  
     <Rule>
       <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
       <MaxScaleDenominator>600000</MaxScaleDenominator>
