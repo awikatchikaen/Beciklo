@@ -91,7 +91,7 @@
       &minscale_zoom15;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-width">8</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -104,7 +104,7 @@
        &maxscale_zoom16;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-width">8</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -252,7 +252,8 @@
      <Rule>
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -267,7 +268,8 @@
     <Rule>
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 250</Filter>
       &maxscale_zoom13;
        &minscale_zoom13;
@@ -282,7 +284,8 @@
     <Rule>
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 150</Filter>
        &maxscale_zoom14;
        &minscale_zoom14;
@@ -297,28 +300,30 @@
     <Rule>
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-width">7</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+        <CssParameter name="stroke-dasharray">2,12</CssParameter>
       </LineSymbolizer>
     </Rule>  
     <Rule>
       <Filter>([highway] = 'pedestrian'
               or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))</Filter>
+              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
+	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
+        <CssParameter name="stroke-width">7</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">1,5</CssParameter>
+        <CssParameter name="stroke-dasharray">2,12</CssParameter>
       </LineSymbolizer>
     </Rule>  
 
