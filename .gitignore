@@ -1,3 +1,4 @@
 # Les ligne commençant par '#' sont des commentaires.
 # Ignorer tous les fichide sauvegarde
 *.*~
+style/inc/datasource-settings.xml.inc
