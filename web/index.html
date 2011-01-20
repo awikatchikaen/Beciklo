@@ -5,10 +5,34 @@
 <script src="http://openlayers.org/api/OpenLayers.js"></script>
 <script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
 <script src="js/map.js"></script>
+
+<link rel="stylesheet" href="css/beciklo.css" type="text/css" media="screen" />
 </head>
 
 <body onload="init();">
 <div id="map">
+
+<div class="menus" id="title">
+Beciklo
+</div>
+
+<div class="menus" id="legende">
+    <span style="width:100%">Legende</span>
+
+    <ul style="position:relative; left:15px">
+    <li><img src="img/legende/bandesCyclables.png"/> : Bandes cyclables sur voies </li>
+    <li><img src="img/legende/pistesCyclables.png"/> : Chemins avec revetement (peut etre ouvert aux pietons)</li>
+    <li><img src="img/legende/paths.png"/> : Chemins sans revetement (ouvert aux pietons)</li>
+    <li><img src="img/legende/footways.png"/> : Chemins pietons </li>
+    <!--li><img src="img/legende/shop_bicycle.png" style="width:20px"/> : Magasin cycliste</li>
+    <li><img src="img/legende/rental_bicycle.png" style="width:20px"/> : Location Velo</li>
+    <li><img src="img/legende/parking.png" style="width:20px"/> : Parking a velo</li>
+    <li><img src="img/legende/Drop.png" style="width:20px"/> : Eau potable</li-->
+
+    </ul>
+</div>
+
+
 </div>
 
 </body>
