@@ -4,6 +4,7 @@
 <link rel="icon" type="image/png" href="img/beciklo.png" />
 <script src="http://openlayers.org/api/OpenLayers.js"></script>
 <script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+<script src="js/flattr.js"></script>
 
    <script type="text/javascript">
         var epsg4326 = new OpenLayers.Projection("EPSG:4326");
@@ -78,6 +79,8 @@
     
     <body onload="init();">
     <div id="map">
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+href="http://www.beciklo.fr"></a>
     </div>
     
     </body>
