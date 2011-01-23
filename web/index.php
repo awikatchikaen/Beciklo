@@ -47,7 +47,7 @@
             } );
  
 
-       var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://95.142.175.12/beciklo/map/background/${z}/${x}/${y}.png");
+       var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://map.beciklo.fr/background/${z}/${x}/${y}.png");
        map.addLayer(newLayer);
 
        var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
@@ -60,7 +60,7 @@
        map.addLayer(l);
 
 
-       var pistes = new OpenLayers.Layer.OSM("Pistes", "http://95.142.175.12/beciklo/map/pistes/${z}/${x}/${y}.png");
+       var pistes = new OpenLayers.Layer.OSM("Pistes", "http://map.beciklo.fr/pistes/${z}/${x}/${y}.png");
        pistes.setIsBaseLayer(false);
        pistes.setVisibility(true);
        map.addLayer(pistes);
