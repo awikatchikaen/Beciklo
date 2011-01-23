@@ -3,7 +3,16 @@
 <title>BeCiklo</title>
 <link rel="icon" type="image/png" href="img/beciklo.png" />
 <script src="js/openLayers/OpenLayers.js"></script>
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA7lWHqEJ8J0dH_nO2DXiRkBRbrZPlULueE6Lg-qvWtwmzLANSABRDxFAhUcnOtWC8tmWMPVubdVT1GA" type="text/javascript"></script>
+<script>
+document.write([
+  '<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=', {
+    'www.beciklo.fr': 'ABQIAAAAzQRBGyHLatg6CuEx2w6n9BSMrkQveYiCESyVAtuplHwf9GrlsRTUqbpMEdgtSSe5UQW-Rxf3lcFkVg',
+    'dev.beciklo.fr': 'ABQIAAAAzQRBGyHLatg6CuEx2w6n9BTKvw3g71sbsYZJtQJEE05jpntKtBS1n9a0E196PxXMIaWB8RJliDrPNQ',
+    '192.168.0.11': 'ABQIAAAAzQRBGyHLatg6CuEx2w6n9BS2NPAWjOf3kO8FeJ6Kcmvki-ZnGhSpOetJjuNFHrlyntqPFfYG7DKvOw'
+  }[window.location.host],
+  '" type="text/javascript"><\/script>'
+].join(''));
+</script>
 <script src="js/map.js"></script>
 </head>
 
