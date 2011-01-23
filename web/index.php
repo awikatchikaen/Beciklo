@@ -79,10 +79,10 @@
     
     <body onload="init();">
     <div id="map">
-<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-href="http://www.beciklo.fr"></a>
     </div>
-    
+    <div style="float:left;position:absolute;bottom:10%;z-index:2000;">
+    <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.beciklo.fr"></a>
+    </div>
     </body>
     
     </html>
