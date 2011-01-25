@@ -1,0 +1,11 @@
+INSTALLATION:
+
+1/ git clone git://github.com/awikatchikaen/Beciklo.git beciklo
+
+2/ cd beciklo
+
+3/ pour avoir la version stable uniquement : git checkout stable
+
+4/ cp style/inc/datasource-settings.xml.inc.example style/inc/datasource-settings.xml.inc
+
+5/ Editer datasource.xml.inc pour renseigner le user/password pour la base de donnée
