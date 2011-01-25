@@ -3,6 +3,8 @@
 <title>BeCiklo</title>
 <link rel="icon" type="image/png" href="img/beciklo.png" />
 <script src="js/openLayers/OpenLayers.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/beciklo.js"></script>
 <script>
 document.write([
   '<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=', {
@@ -22,10 +24,10 @@ document.write([
 <div id="map">
 
 <div class="menus" id="title">
-Beciklo
+<span>Beciklo</span>
 </div>
 
-<div class="menus" id="legende">
+<div class="menus" id="legende" onclick="javascript:closeLegende();">
     <span style="width:100%">Legende</span>
 
     <ul style="position:relative; left:15px">
