@@ -130,10 +130,11 @@
       </LineSymbolizer>
     </Rule>
  <Rule>
-      <Filter>[highway] = 'cycleway' 
+      <Filter>[longueur]>250 and 
+      	      ([highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good'))
+                         or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -145,7 +146,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>
+      <Filter>[longueur]>250 and
 	      (([highway] = 'path' and not [bicycle]='no'
 		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
 		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
@@ -335,10 +336,11 @@
       </LineSymbolizer>
     </Rule>
  <Rule>
-      <Filter>[highway] = 'cycleway' 
+      <Filter>[longueur]>250 and
+      	       ([highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good'))
+                         or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;    
@@ -350,7 +352,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>
+      <Filter>[longueur]>250 and
 	      (([highway] = 'path' and not [bicycle]='no'
 		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
 		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
