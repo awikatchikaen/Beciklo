@@ -37,10 +37,7 @@
 <Style name="roads-calque1"> 
 
      <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -53,10 +50,7 @@
      
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 250</Filter>
       &maxscale_zoom13;
        &minscale_zoom13;
@@ -68,10 +62,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 150</Filter>
        &maxscale_zoom14;
        &minscale_zoom14;
@@ -83,10 +74,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
       &minscale_zoom15;
        <LineSymbolizer>
@@ -97,10 +85,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom16;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
@@ -114,7 +99,7 @@
       <Filter>[longueur] > 500 and ([highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no')))
+                         or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -126,10 +111,14 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[longueur] > 500 and (([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
-              or ([highway] = 'bridleway' and [bicycle] = 'yes'))
+      <Filter>[longueur] > 500 and 
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -144,7 +133,7 @@
       <Filter>[highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
+                         or [smoothness]='excellent' or [smoothness]='good'))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -156,10 +145,14 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+      <Filter>
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -167,20 +160,13 @@
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
- <Rule>
+    <Rule>
       <Filter>[highway] = 'cycleway'
                or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good'))
       </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
@@ -191,21 +177,19 @@
       </LineSymbolizer>
     </Rule>
     <Rule>                                               
-    <Filter>([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+    <Filter>
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
 	    </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
         <CssParameter name="stroke-width">8</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">7</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -250,10 +234,7 @@
 <Style name="roads-calque2"> 
 
      <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -266,10 +247,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 250</Filter>
       &maxscale_zoom13;
        &minscale_zoom13;
@@ -282,10 +260,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 150</Filter>
        &maxscale_zoom14;
        &minscale_zoom14;
@@ -298,10 +273,7 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
+      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
       &minscale_zoom15;
       <LineSymbolizer>
@@ -331,7 +303,7 @@
       <Filter>[longueur] > 500 and ([highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no')))
+                         or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -343,10 +315,14 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[longueur] > 500 and (([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
-              or ([highway] = 'bridleway' and [bicycle] = 'yes'))
+      <Filter>[longueur] > 500 and 
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -362,7 +338,7 @@
       <Filter>[highway] = 'cycleway' 
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
+                         or [smoothness]='excellent' or [smoothness]='good'))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;    
@@ -374,10 +350,14 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+      <Filter>
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -394,7 +374,7 @@
       <Filter>[highway] = 'cycleway'
                or ([highway] = 'path' and not [bicycle]='no'
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good' or [smoothness]='no' or  [surface]='no'))
+                         or [smoothness]='excellent' or [smoothness]='good'))
       </Filter>
 	&maxscale_zoom15;
       <LineSymbolizer>
@@ -405,10 +385,14 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'path' and not [bicycle]='no'
-                and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-                and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+      <Filter>
+	      (([highway] = 'path' and not [bicycle]='no'
+		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or [highway] = 'pedestrian'
+	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
