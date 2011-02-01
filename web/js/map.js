@@ -29,36 +29,34 @@ function init() {
 	    new OpenLayers.Control.PanZoomBar(),
 	    new OpenLayers.Control.LayerSwitcher(),
 	    new OpenLayers.Control.Attribution()],
-	maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
-	maxResolution: 156543.0399,
-	numZoomLevels: 16,
-	units: 'm',
+       	units: 'm',
 	projection: epgs900913,
 	displayProjection: epsg4326
     } );
 
-    var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://map.beciklo.fr/becikloDev/${z}/${x}/${y}.png");
+    var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://map.beciklo.fr/becikloDev/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
     map.addLayer(newLayer);
 
-    var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png");
+    var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
     map.addLayer(mapquest);
 
-    var l = new OpenLayers.Layer.TMS( 
-      "Mapnik", 
-      ["http://tile.openstreetmap.org/"],
-      {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true }, {'buffer':1} );
+    var l = new OpenLayers.Layer.TMS(
+          "Mapnik",
+          ["http://tile.openstreetmap.org/"],
+          {type:'png',getURL: get_osm_url,transitionEffect: 'resize', displayOutsideMaxExtent: true,numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16 }, {'buffer':1} );
     map.addLayer(l);
 
-    var pistes = new OpenLayers.Layer.OSM("Pistes", "http://map.beciklo.fr/pistesDev/${z}/${x}/${y}.png");
+    var gsat = new OpenLayers.Layer.Google( 
+      	"Google Sat.", 
+        { type: G_SATELLITE_MAP, 'sphericalMercator': true, attribution: '<a href="http://www.google.com/intl/en_ALL/help/terms_maps.html">Terms of Use</a> for <a href="http://maps.google.com/">Google Maps</a>.',numZoomLevels:16 } );
+    map.addLayer(gsat);
+                                      
+
+    var pistes = new OpenLayers.Layer.OSM("Pistes", "http://map.beciklo.fr/pistesDev/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
     pistes.setIsBaseLayer(false);
     pistes.setVisibility(true);
     map.addLayer(pistes);
 
-    gsat = new OpenLayers.Layer.Google( 
-      "Google Sat.", 
-      { type: G_SATELLITE_MAP, 'sphericalMercator': true, attribution: '<a href="http://www.google.com/intl/en_ALL/help/terms_maps.html">Terms of Use</a> for <a href="http://maps.google.com/">Google Maps</a>.',numZoomLevels:17 } );
-    map.addLayer(gsat);
-  
     if (!map.getCenter()) {
       var lonLat = new OpenLayers.LonLat(lon, lat).transform(epsg4326, map.getProjectionObject());
       map.setCenter(lonLat, zoom);
