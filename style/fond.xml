@@ -258,7 +258,7 @@
       <Filter>[highway] = 'pedestrian' or [highway]='footway'</Filter>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <PolygonSymbolizer>
-        <CssParameter name="fill">#ededed</CssParameter>
+        <CssParameter name="fill">#ddd</CssParameter>
       </PolygonSymbolizer>
    </Rule>   
    <Rule>
