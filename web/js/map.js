@@ -34,7 +34,7 @@ function init() {
 	displayProjection: epsg4326
     } );
 
-    var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://map.beciklo.fr/becikloDev/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
+    var newLayer = new OpenLayers.Layer.OSM("Beciklo", "http://map.beciklo.fr/beciklo/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
     map.addLayer(newLayer);
 
     var mapquest = new OpenLayers.Layer.OSM("MapQuest", "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
@@ -52,7 +52,7 @@ function init() {
     map.addLayer(gsat);
                                       
 
-    var pistes = new OpenLayers.Layer.OSM("Pistes", "http://map.beciklo.fr/pistesDev/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
+    var pistes = new OpenLayers.Layer.OSM("Pistes", "http://map.beciklo.fr/pistes/${z}/${x}/${y}.png",{numZoomLevels: 17, minZoomLevel: 10, maxZoomLevel: 16});
     pistes.setIsBaseLayer(false);
     pistes.setVisibility(true);
     map.addLayer(pistes);
