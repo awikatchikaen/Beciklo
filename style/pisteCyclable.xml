@@ -949,18 +949,47 @@
       </LineSymbolizer>
     </Rule>
 </Style>
-
-<Style name="network">
+<Style name="network-calque1">
     <Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
-      <MinScaleDenominator>250000</MinScaleDenominator>
+      &maxscale_zoom9;
+     &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">bevel</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
+      &maxscale_zoom9;
+     &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">bevel</CssParameter>
+        <CssParameter name="stroke-linecap">butt</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+   <Rule>
+      <Filter>(not [ncn_ref]='no' or [network]='ncn')</Filter>
+      &maxscale_zoom9;
+     &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">black</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">bevel</CssParameter>
+        <CssParameter name="stroke-linecap">butt</CssParameter>
+      </LineSymbolizer>
+   </Rule>
+</Style>
+
+<Style name="network-calque2">
+    <Rule>
+      <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
+      &maxscale_zoom9;
+     &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">#D71FEC</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -968,28 +997,10 @@
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
     </Rule>   
- <!--Rule>
-      <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
-      <MaxScaleDenominator>250000</MaxScaleDenominator>
-       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#D71FEC</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-linejoin">bevel</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-        <CssParameter name="stroke-opacity">0.2</CssParameter>
-      </LineSymbolizer>
-    </Rule-->  
     <Rule>
       <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
-      <MinScaleDenominator>250000</MinScaleDenominator>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">bevel</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
+      &maxscale_zoom9;
+     &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">#7B3FCB</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -999,14 +1010,8 @@
     </Rule>   
     <Rule>
       <Filter>(not [ncn_ref]='no' or [network]='ncn')</Filter>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
-      <MinScaleDenominator>250000</MinScaleDenominator>
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">bevel</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
+      &maxscale_zoom9;
+     &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">red</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1147,7 +1152,9 @@ or man_made is NOT NULL) as amenity</Parameter>
     </Datasource>
 </Layer>
 <Layer name="network" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-    <StyleName>network</StyleName>
+
+    <StyleName>network-calque1</StyleName>
+    <StyleName>network-calque2</StyleName>
     <Datasource>
       <Parameter name="table">
       (select way,bicycle,highway,network,
