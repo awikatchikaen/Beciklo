@@ -4,24 +4,35 @@
 %entities;
 ]>
 
-<Map bgcolor="#f1eee8" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-<!--Style name="world">
+<Map bgcolor="#B5D2CE" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+<Style name="world">
     <Rule>
       <MaxScaleDenominator>250000000000</MaxScaleDenominator>
       <MinScaleDenominator>600000</MinScaleDenominator>
-      <PolygonSymbolizer>
-        <CssParameter name="fill">#f2efe9</CssParameter>
-      </PolygonSymbolizer>
+      <LineSymbolizer>
+        <CssParameter name="stroke">#999</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+      </LineSymbolizer>
+                      
+
+      <!--PolygonSymbolizer>
+        <CssParameter name="fill">blue</CssParameter>
+      </PolygonSymbolizer-->
     </Rule>
 </Style>
 <Style name="coast-poly">
     <Rule>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
+      <MaxScaleDenominator>250000000000</MaxScaleDenominator>
+      <!--LineSymbolizer>
+        <CssParameter name="stroke">#999</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+      </LineSymbolizer-->
+
       <PolygonSymbolizer>
-        <CssParameter name="fill">#f2efe9</CssParameter>
+        <CssParameter name="fill">#f1eee8</CssParameter>
       </PolygonSymbolizer>
     </Rule>
-</Style-->
+</Style>
   <!-- BUILTUP VMAP0 -->
   <!-- level 7-9-->
 <Style name="builtup">
@@ -4608,7 +4619,7 @@
       </LineSymbolizer>
     </Rule>
 </Style>
-<Layer name="world" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+<Layer name="world" status="off" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>world</StyleName>
     <Datasource>
       <Parameter name="type">shape</Parameter>
@@ -4622,7 +4633,7 @@
       <Parameter name="file">&world_boundaries;/processed_p</Parameter>
     </Datasource>
 </Layer>
-<Layer name="builtup" status="on" srs="+proj=merc +datum=WGS84 +over">
+<Layer name="builtup" status="off" srs="+proj=merc +datum=WGS84 +over">
     <StyleName>builtup</StyleName>
     <Datasource>
       <Parameter name="type">shape</Parameter>

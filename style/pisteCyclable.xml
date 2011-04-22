@@ -989,7 +989,7 @@
     <Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+     &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">#D71FEC</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -999,8 +999,8 @@
     </Rule>   
     <Rule>
       <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
-      &maxscale_zoom9;
-     &minscale_zoom14;
+      &maxscale_zoom8;
+     &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">#7B3FCB</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1010,8 +1010,8 @@
     </Rule>   
     <Rule>
       <Filter>(not [ncn_ref]='no' or [network]='ncn')</Filter>
-      &maxscale_zoom9;
-     &minscale_zoom14;
+      &maxscale_zoom7;
+     &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">red</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
