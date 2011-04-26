@@ -34,8 +34,8 @@
       </LineSymbolizer>
     </Rule>
 </Style>
-<Style name="roads-calque1"> 
-
+<Style name="roads-calque1">  
+    <!-- **********************Voies partagée bus **********************-->
      <Rule>
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
@@ -76,30 +76,21 @@
     <Rule>
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
-      &minscale_zoom15;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
     </Rule>  
+    
+    <!-- ********************** Avec revetement **********************-->
     <Rule>
-      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
-       &maxscale_zoom16;
-       <LineSymbolizer>
-        <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-    </Rule>  
-
- <Rule>
-      <Filter>[longueur] > 500 and ([highway] = 'cycleway' 
-               or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good')))
+      <Filter>[longueur] > 500 
+		and ([highway] = 'cycleway'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -111,30 +102,11 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[longueur] > 500 and 
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
-              or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
-      </Filter>
-       &maxscale_zoom12;
-       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-    </Rule>
- <Rule>
-      <Filter>[longueur]>250 and 
-      	      ([highway] = 'cycleway' 
-               or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good')))
+      <Filter>[longueur]>250 
+		and ([highway] = 'cycleway'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
@@ -145,100 +117,81 @@
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
     </Rule>
-    <Rule>
-      <Filter>[longueur]>250 and
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
-              or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
-      </Filter>
-      &maxscale_zoom13;
-      &minscale_zoom14;
-      <LineSymbolizer>
-        <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
+     <Rule>
       <Filter>[highway] = 'cycleway'
-               or ([highway] = 'path' and not [bicycle]='no'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
                     and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good'))
       </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>                                                               
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
     </Rule>
-    <Rule>                                               
-    <Filter>
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+    
+    <!-- ********************** Sans revetement **********************-->
+    <Rule>
+      <Filter>[longueur] > 500 and 
+	      (((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+      </Filter>
+       &maxscale_zoom12;
+       &minscale_zoom12;
+      <LineSymbolizer>
+        <CssParameter name="stroke">green</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">butt</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    
+    <Rule>
+      <Filter>[longueur]>250 and
+	      (((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes')
+	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
+      </Filter>
+      &maxscale_zoom13;
+      &minscale_zoom14;
+      <LineSymbolizer>
+        <CssParameter name="stroke">green</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>                                               
+    <Filter>(((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+              or ([highway] = 'bridleway' and [bicycle] = 'yes')
 	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
 	    </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
-
-<!--Rule>
-      <Filter>[highway] = 'track' and [longueur] > 500 and not [tracktype]='grade1'</Filter>
-       &maxscale_zoom12;
-       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#807254</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
-      <Filter>[highway] = 'track' and not [tracktype]='grade1'</Filter>
-      &maxscale_zoom13;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#807254</CssParameter>
-        <CssParameter name="stroke-width">4</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-      <LineSymbolizer>
-        <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule-->
 </Style>
 <Style name="roads-calque2"> 
 
+    <!-- ********************** Voies de bus partagée **********************-->
      <Rule>
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 500</Filter>
-       &maxscale_zoom12;
-       &minscale_zoom12;
+      &maxscale_zoom12;
+      &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -251,7 +204,7 @@
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 250</Filter>
       &maxscale_zoom13;
-       &minscale_zoom13;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -263,8 +216,8 @@
     <Rule>
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')
               and [longueur] > 150</Filter>
-       &maxscale_zoom14;
-       &minscale_zoom14;
+      &maxscale_zoom14;
+      &minscale_zoom14;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">2</CssParameter>
@@ -274,37 +227,24 @@
       </LineSymbolizer>
     </Rule>  
     <Rule>
-      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
-       &maxscale_zoom15;
-      &minscale_zoom15;
+      <Filter>[cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway'</Filter>
+      &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
         <CssParameter name="stroke-dasharray">2,12</CssParameter>
       </LineSymbolizer>
     </Rule>  
+    
+    <!-- ********************** Avec revetement **********************-->
     <Rule>
-      <Filter>([highway] = 'pedestrian'
-              or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
-              or ([highway] = 'steps' and [ramp:bicycle] = 'yes')
-	      or [cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
-       &maxscale_zoom16;
-      <LineSymbolizer>
-        <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-        <CssParameter name="stroke-dasharray">2,12</CssParameter>
-      </LineSymbolizer>
-    </Rule>  
-
- <Rule>
-      <Filter>[longueur] > 500 and ([highway] = 'cycleway' 
-               or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good')))
+      <Filter>[longueur] > 500 
+		and ([highway] = 'cycleway'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good')))
       </Filter>
        &maxscale_zoom12;
        &minscale_zoom12;
@@ -316,13 +256,43 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
+      <Filter>[longueur]>250 
+		and ([highway] = 'cycleway'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good')))
+      </Filter>
+      &maxscale_zoom13;
+      &minscale_zoom14;    
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">3</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+     <Rule>
+      <Filter>[highway] = 'cycleway'
+		or [highway] = 'pedestrian'
+		or ((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete' or [smoothness]='excellent' or [smoothness]='good'))
+      </Filter>
+	&maxscale_zoom15;
+      <LineSymbolizer>
+        <CssParameter name="stroke">limegreen</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    
+    <!-- ********************** Sans revetement **********************-->
+    <Rule>
       <Filter>[longueur] > 500 and 
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+	      (((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
 	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
        &maxscale_zoom12;
@@ -335,30 +305,13 @@
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
- <Rule>
-      <Filter>[longueur]>250 and
-      	       ([highway] = 'cycleway' 
-               or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good')))
-      </Filter>
-      &maxscale_zoom13;
-      &minscale_zoom14;    
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">3</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
+
     <Rule>
       <Filter>[longueur]>250 and
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+	      (((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
 	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
       &maxscale_zoom13;
@@ -372,40 +325,23 @@
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
- <Rule>
-      <Filter>[highway] = 'cycleway'
-               or ([highway] = 'path' and not [bicycle]='no'
-                    and ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'
-                         or [smoothness]='excellent' or [smoothness]='good'))
-      </Filter>
-	&maxscale_zoom15;
-      <LineSymbolizer>
-        <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
     <Rule>
       <Filter>
-	      (([highway] = 'path' and not [bicycle]='no'
-		  and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
-		  and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
+	      (((([highway] = 'path' and not [bicycle]='no') or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive')))
+		    and ([smoothness]='intermediate' or [smoothness]='bad' or [smoothness]='very_bad' or [smoothness]='no')
+		    and not ([surface]='paved' or [surface]='asphalt' or [surface]='concrete'))
               or ([highway] = 'bridleway' and [bicycle] = 'yes')
-	      or [highway] = 'pedestrian'
-	      or ([highway] = 'footway' and ([bicycle]='yes' or [bicycle]='permissive'))
 	      or ([highway] = 'steps' and [ramp:bicycle] = 'yes'))
       </Filter>
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-dasharray">2,9</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
     </Rule>
-
 </Style>
 
 <Style name="cycleway-calque1">
@@ -451,7 +387,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -463,7 +399,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -475,7 +411,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -486,7 +422,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -498,7 +434,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -510,7 +446,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+      <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -521,7 +457,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -532,7 +468,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -543,7 +479,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -553,7 +489,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -564,7 +500,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -575,7 +511,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -631,7 +567,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -644,7 +580,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -657,7 +593,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -669,7 +605,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -682,7 +618,7 @@
     
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -695,7 +631,7 @@
       
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -707,7 +643,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -719,7 +655,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -730,7 +666,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -740,7 +676,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -751,7 +687,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -762,7 +698,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
