@@ -76,20 +76,9 @@
     <Rule>
       <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
        &maxscale_zoom15;
-      &minscale_zoom15;
        <LineSymbolizer>
         <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-linejoin">miter</CssParameter>
-        <CssParameter name="stroke-linecap">butt</CssParameter>
-      </LineSymbolizer>
-    </Rule>  
-    <Rule>
-      <Filter>([cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway')</Filter>
-       &maxscale_zoom16;
-       <LineSymbolizer>
-        <CssParameter name="stroke">#f6ff00</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -137,7 +126,7 @@
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>                                                               
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -189,7 +178,7 @@
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -240,10 +229,9 @@
     <Rule>
       <Filter>[cycleway]='share_busway' or [cycleway:right]='share_busway' or [cycleway:left]='share_busway'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">miter</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
         <CssParameter name="stroke-dasharray">2,12</CssParameter>
@@ -292,7 +280,7 @@
 	&maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -348,7 +336,7 @@
       &maxscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">lawngreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-dasharray">2,9</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
@@ -399,7 +387,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -411,7 +399,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -423,7 +411,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -434,7 +422,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -446,7 +434,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -458,7 +446,7 @@
       &minscale_zoom15;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+      <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -469,7 +457,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -480,7 +468,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -491,7 +479,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">mediumblue</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -501,7 +489,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -512,7 +500,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -523,7 +511,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">green</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
+        <CssParameter name="stroke-width">5</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">butt</CssParameter>
       </LineSymbolizer>
@@ -579,7 +567,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -592,7 +580,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -605,7 +593,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -617,7 +605,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -630,7 +618,7 @@
     
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -643,7 +631,7 @@
       
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -655,7 +643,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -667,7 +655,7 @@
      
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -678,7 +666,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">cornflowerblue</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -688,7 +676,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -699,7 +687,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
@@ -710,7 +698,7 @@
        &maxscale_zoom16;
       <LineSymbolizer>
         <CssParameter name="stroke">limegreen</CssParameter>
-        <CssParameter name="stroke-width">5</CssParameter>
+        <CssParameter name="stroke-width">4</CssParameter>
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
