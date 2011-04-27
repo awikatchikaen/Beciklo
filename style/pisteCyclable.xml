@@ -889,7 +889,7 @@
     <Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -900,7 +900,7 @@
     <Rule>
       <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -911,7 +911,7 @@
    <Rule>
       <Filter>(not [ncn_ref]='no' or [network]='ncn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">black</CssParameter>
         <CssParameter name="stroke-width">4</CssParameter>
@@ -925,7 +925,7 @@
     <Rule>
       <Filter>(not [lcn_ref]='no' or [network]='lcn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">#D71FEC</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -936,7 +936,7 @@
     <Rule>
       <Filter>(not [rcn_ref]='no' or [network]='rcn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">#7B3FCB</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -947,7 +947,7 @@
     <Rule>
       <Filter>(not [ncn_ref]='no' or [network]='ncn')</Filter>
       &maxscale_zoom9;
-     &minscale_zoom14;
+      &minscale_zoom13;
       <LineSymbolizer>
         <CssParameter name="stroke">red</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
@@ -1088,7 +1088,6 @@ or man_made is NOT NULL) as amenity</Parameter>
     </Datasource>
 </Layer>
 <Layer name="network" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
-
     <StyleName>network-calque1</StyleName>
     <StyleName>network-calque2</StyleName>
     <Datasource>
