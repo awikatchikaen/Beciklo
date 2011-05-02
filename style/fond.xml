@@ -446,16 +446,8 @@
         <CssParameter name="fill">#b5e3b5</CssParameter>
      </PolygonSymbolizer>
     </Rule>
-<!--    <Rule>
-      <Filter>[landuse] = 'forest'</Filter>
-      &maxscale_zoom8;
-      &minscale_zoom13;
-      <PolygonSymbolizer>
-        <CssParameter name="fill">#aed1a0</CssParameter>
-     </PolygonSymbolizer>
-    </Rule>-->
     <Rule>
-      <Filter>([landuse] = 'forest')and [aire] > 30000</Filter>
+      <Filter>([landuse] = 'forest') and [aire] > 30000</Filter>
       &maxscale_zoom7;
       &minscale_zoom12;
       <PolygonSymbolizer>
@@ -542,7 +534,7 @@
     </Rule>
     <Rule>
       <Filter>[landuse] = 'basin'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
+      &maxscale_zoom7;
       <PolygonSymbolizer>
         <CssParameter name="fill">#b5d0d0</CssParameter>
      </PolygonSymbolizer>
@@ -660,7 +652,7 @@
     <Rule>
       <Filter>([place] = 'city' or [place]='metropolis') and [capital]='yes'</Filter>
       <MaxScaleDenominator>10000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
+      &minscale_zoom8;
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="11" fill="#000" dy="0" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
@@ -680,7 +672,7 @@
     <Rule>
       <Filter>([place] = 'city' or [place]='metropolis') and not [capital]='yes'</Filter>
       <MaxScaleDenominator>10000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
+      &minscale_zoom8;
       <TextSymbolizer name="name" face_name="DejaVu Sans Book" size="8" fill="#000" dy="0" halo_radius="1" wrap_width="0"/>
     </Rule>
     <Rule>
@@ -3983,8 +3975,8 @@
     <!-- level 4-5 -->
     <Rule>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-      <MaxScaleDenominator>25000000</MaxScaleDenominator>
-      <MinScaleDenominator>5000000</MinScaleDenominator>
+      &maxscale_zoom5;
+      &minscale_zoom7;
       <LineSymbolizer>
         <CssParameter name="stroke">#f0c990</CssParameter>
         <CssParameter name="stroke-width">0.5</CssParameter>
@@ -3993,8 +3985,8 @@
     <!-- level 6-8 -->
     <Rule>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
+      &maxscale_zoom7;
+      &minscale_zoom8;
       <LineSymbolizer>
        <CssParameter name="stroke">#f0c990</CssParameter>
        <CssParameter name="stroke-width">1</CssParameter>
@@ -4003,7 +3995,7 @@
 <Rule>
       <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
       &maxscale_zoom8;
-      <MinScaleDenominator>1000000</MinScaleDenominator>
+      &minscale_zoom9;
       <LineSymbolizer>
        <CssParameter name="stroke">#f0c990</CssParameter>
        <CssParameter name="stroke-width">1.4</CssParameter>
@@ -4032,8 +4024,8 @@
    <!-- level 5-6-->
    <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-      <MaxScaleDenominator>5000000</MaxScaleDenominator>
-      <MinScaleDenominator>2000000</MinScaleDenominator>
+      &maxscale_zoom7;
+      &minscale_zoom8;
       <LineSymbolizer>
         <CssParameter name="stroke">#f0d8b5</CssParameter>
         <CssParameter name="stroke-width">0.5</CssParameter>
@@ -4043,7 +4035,7 @@
     <Rule>
       <Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
       &maxscale_zoom8;
-      <MinScaleDenominator>1000000</MinScaleDenominator>
+      &minscale_zoom9;
       <LineSymbolizer>
         <CssParameter name="stroke">#f0d8b5</CssParameter>
         <CssParameter name="stroke-width">1.2</CssParameter>
@@ -4863,7 +4855,7 @@
 
     </Datasource>
 </Layer>
-<Layer name="aerialways" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+<Layer name="aerialways" status="off" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>aerialways</StyleName>
     <Datasource>
       <Parameter name="table">

@@ -1,12 +1,13 @@
+<!-- Copyright 2010, 2011 Awikatchikaen -->
 <html>
 <head>
 <title>BeCiklo</title>
 <link rel="icon" type="image/png" href="img/beciklo.png" />
+<script src="js/flattr.js"></script>
 <script src="js/openLayers/OpenLayers.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/beciklo.js"></script>
 <script src="js/map.js"></script>
-<script src="js/flattr.js"></script>
 <script>
 document.write([
   '<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=', {
@@ -24,30 +25,36 @@ document.write([
 <body onload="init();">
 <div id="map">
 
-<div class="menus" id="bandeau">
-<div id="flattr"> 
-     <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.beciklo.fr"></a>
-</div>
-<div id="titre">Beciklo v0.3</div>
+  <div class="menus" id="bandeau">
+    <div id="droite">
+      <a class="FlattrButton" rev="flattr;button:compact;" style="display:none;" href="http://www.beciklo.fr"></a>
+      <noscript>
+	<a href="http://flattr.com/thing/121807/Beciklo" target="_blank">
+	<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+      </noscript>
+      <img id="infoPoint" src="img/ExclamationPoint.png" onclick="javascript:openInfos(); "/>
+    </div>
+    <div id="titre">Beciklo v0.3</div>
+  </div>
 
-</div>
+  <div class="menus" id="legende" onclick="javascript:closeLegende();">
+      <span style="width:100%">Legende</span>
+      <ul style="position:relative; left:15px">
+      <li><img src="img/legende/footways.png"/> : Voies partagees avec les bus </li>
+      <li><img src="img/legende/bandesCyclables.png"/> : Bandes cyclables sur voies </li>
+      <li><img src="img/legende/pistesCyclables.png"/> : Chemins avec revetement (peut etre ouvert aux pietons) </li>
+      <li><img src="img/legende/paths.png"/> : Chemins sans revetement (ouvert aux pietons) </li>
+      <!--li><img src="img/legende/shop_bicycle.png" style="width:20px"/> : Magasin cycliste</li>
+      <li><img src="img/legende/rental_bicycle.png" style="width:20px"/> : Location Velo</li>
+      <li><img src="img/legende/parking.png" style="width:20px"/> : Parking a velo</li>
+      <li><img src="img/legende/Drop.png" style="width:20px"/> : Eau potable</li-->
+      </ul>
+  </div>
 
-<div class="menus" id="legende" onclick="javascript:closeLegende();">
-    <span style="width:100%">Legende</span>
-
-    <ul style="position:relative; left:15px">
-     <li><img src="img/legende/footways.png"/> : Voies partagees avec les bus </li>
-     <li><img src="img/legende/bandesCyclables.png"/> : Bandes cyclables sur voies </li>
-     <li><img src="img/legende/pistesCyclables.png"/> : Chemins avec revetement (peut etre ouvert aux pietons)</li>
-     <li><img src="img/legende/paths.png"/> : Chemins sans revetement (ouvert aux pietons)</li>
-     <!--li><img src="img/legende/shop_bicycle.png" style="width:20px"/> : Magasin cycliste</li>
-     <li><img src="img/legende/rental_bicycle.png" style="width:20px"/> : Location Velo</li>
-     <li><img src="img/legende/parking.png" style="width:20px"/> : Parking a velo</li>
-     <li><img src="img/legende/Drop.png" style="width:20px"/> : Eau potable</li-->
-
-    </ul>
-</div>
-
+  <div class="menus" id="infos" onclick="javascript:closeInfos();">
+	Beciklo est distribu&eacute; sous les termes de la licence <a   href="https://github.com/awikatchikaen/Beciklo/blob/stable/COPYING">GPL v3</a><br/>
+	Les sources sont disponibles sur <a href="https://github.com/awikatchikaen/Beciklo">GitHub</a>
+  </div>
 
 </div>
 
