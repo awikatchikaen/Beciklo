@@ -1,4 +1,4 @@
- /* <![CDATA[ */
+/* <![CDATA[ */
     (function() {
         var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
         s.type = 'text/javascript';
@@ -7,3 +7,4 @@
         t.parentNode.insertBefore(s, t);
     })();
 /* ]]> */
+
