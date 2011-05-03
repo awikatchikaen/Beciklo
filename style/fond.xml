@@ -954,6 +954,17 @@
     <Rule>
       <Filter>[waterway]='canal' and not [disused]='yes'</Filter>
       &maxscale_zoom10;
+      &minscale_zoom11;
+      <LineSymbolizer>
+        <CssParameter name="stroke">#b5d0d0</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
+        <CssParameter name="stroke-linejoin">round</CssParameter>
+        <CssParameter name="stroke-linecap">round</CssParameter>
+      </LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[waterway]='canal' and not [disused]='yes'</Filter>
+      &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">#b5d0d0</CssParameter>
